@@ -135,6 +135,6 @@ The [management report](reports/management_report.md) records verified synthetic
 - The sample excludes cancellations, split shipments, failed delivery attempts, holidays, timezone edge cases and customer-priority differences.
 - In real operations, the team should define the SLA, use production event logs, check confounders, and measure any change using a controlled pilot.
 
-## Project ownership and reuse
+## Project ownership 
 
-The data generator, validation pipeline, SQL analysis, dashboard and report in this repository were written for this portfolio project. They do not copy source code or data from the previously considered process-mining repository. No `LICENSE` file is included.
+The data generator, validation pipeline, SQL analysis, dashboard and report in this repository were written for this portfolio project.
