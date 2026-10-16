@@ -99,3 +99,11 @@ def test_data_quality_checks_show_no_missing_or_negative_durations(tmp_path: Pat
     assert quality.loc["missing_order_ids", "observed_value"] == 0
     assert quality.loc["negative_stage_durations", "observed_value"] == 0
     assert quality.loc["missing_promised_delivery", "observed_value"] == 0
+
+
+def test_streamlit_dashboard_renders_without_app_exceptions() -> None:
+    pytest.importorskip("streamlit")
+    from streamlit.testing.v1 import AppTest
+
+    app = AppTest.from_file(str(ROOT / "dashboard" / "app.py"), default_timeout=30).run(timeout=30)
+    assert len(app.exception) == 0, [exception.message for exception in app.exception]
