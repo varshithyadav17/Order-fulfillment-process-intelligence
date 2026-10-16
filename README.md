@@ -138,3 +138,14 @@ The [management report](reports/management_report.md) records verified synthetic
 ## Project ownership 
 
 The data generator, validation pipeline, SQL analysis, dashboard and report in this repository were written for this portfolio project.
+
+## Business Analyst case-study artifacts
+
+The links below document the hypothetical business problem, scope, requirements, stakeholder communication, process-improvement hypothesis, user stories, acceptance criteria, and KPI measurement approach. These are portfolio artifacts—not evidence of real stakeholder interviews, company adoption, or achieved operational impact.
+
+- [Business requirements brief](docs/business_requirements.md)
+- [Stakeholder and communication plan](docs/stakeholder_and_communication_plan.md)
+- [As-is / to-be process improvement case](docs/process_improvement_case.md)
+- [User stories and acceptance criteria](docs/user_stories_acceptance_criteria.md)
+- [KPI and measurement plan](docs/kpi_measurement_plan.md)
+
