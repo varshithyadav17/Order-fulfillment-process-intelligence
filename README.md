@@ -50,7 +50,9 @@ flowchart TD
 ├── data/
 │   ├── raw/                   # Generated order CSV (not committed)
 │   └── processed/             # Local SQLite database (not committed)
-├── docs/data_dictionary.md
+├── docs/
+│   ├── data_dictionary.md
+│   └── interview_walkthrough.md
 ├── outputs/                   # Generated CSV summaries (not committed)
 ├── reports/
 │   ├── dashboard-preview.svg
@@ -98,7 +100,7 @@ The dashboard also generates the synthetic dataset in memory on first start if `
 - **Stage duration:** hours from order to pack, pack to ship, and ship to delivery.
 - **Order value on late orders:** sum of values on late orders; it is not a direct estimate of lost revenue or financial loss.
 
-Definitions and fields are documented in [`docs/data_dictionary.md`](docs/data_dictionary.md).
+Definitions and fields are documented in [`docs/data_dictionary.md`](docs/data_dictionary.md). An [interview walkthrough](docs/interview_walkthrough.md) explains the metrics, synthetic results, caveats and likely follow-up questions.
 
 ## Outputs
 
